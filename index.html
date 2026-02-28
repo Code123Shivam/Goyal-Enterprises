@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Goyal Enterprises - Premium Hardware & Plywood Store">
+    <title>Goyal Enterprises - Hardware & Plywood Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Toggle Button -->
+    <button class="language-toggle" id="languageToggle" aria-label="Toggle Language">
+        <span class="lang-text" data-en="हिंदी" data-hi="English">हिंदी</span>
+    </button>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-circle"></div>
+                <span class="brand-name" data-en="Goyal Enterprises" data-hi="गोयल एंटरप्राइजेज">Goyal Enterprises</span>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link" data-en="Home" data-hi="होम">Home</a></li>
+                <li><a href="#products" class="nav-link" data-en="Products" data-hi="उत्पाद">Products</a></li>
+                <li><a href="#services" class="nav-link" data-en="Services" data-hi="सेवाएं">Services</a></li>
+                <li><a href="#contact" class="nav-link" data-en="Contact" data-hi="संपर्क करें">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <!-- Placeholder: Replace this image with your actual plywood/hardware background image -->
+            <div class="hero-image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title" data-en="Premium Hardware & Plywood Solutions" data-hi="प्रीमियम हार्डवेयर और प्लाईवुड समाधान">
+                Premium Hardware & Plywood Solutions
+            </h1>
+            <p class="hero-subtitle" data-en="Quality Products | Expert Service | Best Prices" data-hi="गुणवत्ता उत्पाद | विशेषज्ञ सेवा | सर्वोत्तम कीमतें">
+                Quality Products | Expert Service | Best Prices
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary" data-en="Shop Now" data-hi="अभी खरीदें" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">Shop Now</button>
+                <button class="btn btn-secondary" data-en="Learn More" data-hi="और जानें" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span data-en="Scroll to explore" data-hi="अन्वेषण करने के लिए स्क्रॉल करें">Scroll to explore</span>
+            <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Our Products" data-hi="हमारे उत्पाद">Our Products</h2>
+                <p class="section-subtitle" data-en="Explore our wide range of premium hardware and plywood solutions" data-hi="हमारे प्रीमियम हार्डवेयर और प्लाईवुड समाधानों की विस्तृत श्रृंखला देखें">
+                    Explore our wide range of premium hardware and plywood solutions
+                </p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1: Plywood -->
+                <div class="product-card" data-reveal>
+                    <div class="product-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <!-- Replace this image with your own plywood product image -->
+                        <span class="image-placeholder">🪵</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Plywood (All Types)" data-hi="प्लाईवुड (सभी प्रकार)">Plywood (All Types)</h3>
+                        <p class="product-desc" data-en="High-quality plywood sheets in various sizes and grades" data-hi="विभिन्न आकार और ग्रेड में उच्च गुणवत्ता वाली प्लाईवुड शीट">
+                            High-quality plywood sheets in various sizes and grades
+                        </p>
+                        <button class="btn-inquiry" onclick="sendWhatsAppInquiry('Plywood')">
+                            <span data-en="Inquire via WhatsApp" data-hi="व्हाट्सएप के माध्यम से पूछें">Inquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2: Doors -->
+                <div class="product-card" data-reveal>
+                    <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span class="image-placeholder">🚪</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Doors" data-hi="दरवाजे">Doors</h3>
+                        <p class="product-desc" data-en="Premium wooden doors with modern designs" data-hi="आधुनिक डिजाइन के साथ प्रीमियम लकड़ी के दरवाजे">
+                            Premium wooden doors with modern designs
+                        </p>
+                        <button class="btn-inquiry" onclick="sendWhatsAppInquiry('Doors')">
+                            <span data-en="Inquire via WhatsApp" data-hi="व्हाट्सएप के माध्यम से पूछें">Inquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3: Nails & Fasteners -->
+                <div class="product-card" data-reveal>
+                    <div class="product-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <span class="image-placeholder">🔧</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Nails & Fasteners" data-hi="कीलें और फास्टनर">Nails & Fasteners</h3>
+                        <p class="product-desc" data-en="Durable nails and fastening solutions for all projects" data-hi="सभी परियोजनाओं के लिए टिकाऊ कीलें और फास्टनिंग समाधान">
+                            Durable nails and fastening solutions for all projects
+                        </p>
+                        <button class="btn-inquiry" onclick="sendWhatsAppInquiry('Nails & Fasteners')">
+                            <span data-en="Inquire via WhatsApp" data-hi="व्हाट्सएप के माध्यम से पूछें">Inquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4: Hardware Items -->
+                <div class="product-card" data-reveal>
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <span class="image-placeholder">⚙️</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Hardware Items" data-hi="हार्डवेयर सामान">Hardware Items</h3>
+                        <p class="product-desc" data-en="Comprehensive range of hardware components & accessories" data-hi="हार्डवेयर घटकों और सहायक उपकरण की व्यापक श्रृंखला">
+                            Comprehensive range of hardware components & accessories
+                        </p>
+                        <button class="btn-inquiry" onclick="sendWhatsAppInquiry('Hardware Items')">
+                            <span data-en="Inquire via WhatsApp" data-hi="व्हाट्सएप के माध्यम से पूछें">Inquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5: Tools -->
+                <div class="product-card" data-reveal>
+                    <div class="product-image" style="background: linear-gradient(135deg, #ff9a56 0%, #ff6a88 100%);">
+                        <span class="image-placeholder">🛠️</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Tools" data-hi="उपकरण">Tools</h3>
+                        <p class="product-desc" data-en="Professional-grade tools for every construction need" data-hi="हर निर्माण आवश्यकता के लिए पेशेवर-ग्रेड उपकरण">
+                            Professional-grade tools for every construction need
+                        </p>
+                        <button class="btn-inquiry" onclick="sendWhatsAppInquiry('Tools')">
+                            <span data-en="Inquire via WhatsApp" data-hi="व्हाट्सएप के माध्यम से पूछें">Inquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6: Machinery -->
+                <div class="product-card" data-reveal>
+                    <div class="product-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="image-placeholder">🔨</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Machinery (Drill, etc.)" data-hi="मशीनरी (ड्रिल, आदि)">Machinery (Drill, etc.)</h3>
+                        <p class="product-desc" data-en="Heavy-duty machinery and power tools for professionals" data-hi="पेशेवारों के लिए भारी-शुल्क मशीनरी और बिजली उपकरण">
+                            Heavy-duty machinery and power tools for professionals
+                        </p>
+                        <button class="btn-inquiry" onclick="sendWhatsAppInquiry('Machinery')">
+                            <span data-en="Inquire via WhatsApp" data-hi="व्हाट्सएप के माध्यम से पूछें">Inquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 7: Adhesives -->
+                <div class="product-card" data-reveal>
+                    <div class="product-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="image-placeholder">🧴</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Adhesives (Fevicol)" data-hi="चिपकने वाला (फेविकॉल)">Adhesives (Fevicol)</h3>
+                        <p class="product-desc" data-en="Premium adhesives and bonding solutions" data-hi="प्रीमियम चिपकने वाली और बंधन समाधान">
+                            Premium adhesives and bonding solutions
+                        </p>
+                        <button class="btn-inquiry" onclick="sendWhatsAppInquiry('Adhesives')">
+                            <span data-en="Inquire via WhatsApp" data-hi="व्हाट्सएप के माध्यम से पूछें">Inquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 8: Curtain Hangers -->
+                <div class="product-card" data-reveal>
+                    <div class="product-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span class="image-placeholder">🪟</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Curtain Hangers" data-hi="पर्दे लटकाने वाले">Curtain Hangers</h3>
+                        <p class="product-desc" data-en="Modern curtain rods and hanging hardware" data-hi="आधुनिक पर्दे की रॉड और लटकाने वाला हार्डवेयर">
+                            Modern curtain rods and hanging hardware
+                        </p>
+                        <button class="btn-inquiry" onclick="sendWhatsAppInquiry('Curtain Hangers')">
+                            <span data-en="Inquire via WhatsApp" data-hi="व्हाट्सएप के माध्यम से पूछें">Inquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 9: Sofa Covers -->
+                <div class="product-card" data-reveal>
+                    <div class="product-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <span class="image-placeholder">🛋️</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Sofa Covers" data-hi="सोफा कवर">Sofa Covers</h3>
+                        <p class="product-desc" data-en="Durable and stylish sofa covers and upholstery" data-hi="टिकाऊ और स्टाइलिश सोफा कवर और असबाब">
+                            Durable and stylish sofa covers and upholstery
+                        </p>
+                        <button class="btn-inquiry" onclick="sendWhatsAppInquiry('Sofa Covers')">
+                            <span data-en="Inquire via WhatsApp" data-hi="व्हाट्सएप के माध्यम से पूछें">Inquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 10: Sofa Seats -->
+                <div class="product-card" data-reveal>
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <span class="image-placeholder">🛏️</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Sofa Seats" data-hi="सोफा सीटें">Sofa Seats</h3>
+                        <p class="product-desc" data-en="Premium sofa seats and upholstered furniture" data-hi="प्रीमियम सोफा सीटें और असबाब वाली फर्नीचर">
+                            Premium sofa seats and upholstered furniture
+                        </p>
+                        <button class="btn-inquiry" onclick="sendWhatsAppInquiry('Sofa Seats')">
+                            <span data-en="Inquire via WhatsApp" data-hi="व्हाट्सएप के माध्यम से पूछें">Inquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+                      <div class="product-card" data-reveal>
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <span class="image-placeholder">🛏️</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Sofa Seats" data-hi="सोफा सीटें">Sofa Seats</h3>
+                        <p class="product-desc" data-en="Premium sofa seats and upholstered furniture" data-hi="प्रीमियम सोफा सीटें और असबाब वाली फर्नीचर">
+                            Premium sofa seats and upholstered furniture
+                        </p>
+                        <button class="btn-inquiry" onclick="sendWhatsAppInquiry('Sofa Seats')">
+                            <span data-en="Inquire via WhatsApp" data-hi="व्हाट्सएप के माध्यम से पूछें">Inquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+                      <div class="product-card" data-reveal>
+                    <div class="product-image" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                        <span class="image-placeholder">🛏️</span>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name" data-en="Sofa Seats" data-hi="सोफा सीटें">Sofa Seats</h3>
+                        <p class="product-desc" data-en="Premium sofa seats and upholstered furniture" data-hi="प्रीमियम सोफा सीटें और असबाब वाली फर्नीचर">
+                            Premium sofa seats and upholstered furniture
+                        </p>
+                        <button class="btn-inquiry" onclick="sendWhatsAppInquiry('Sofa Seats')">
+                            <span data-en="Inquire via WhatsApp" data-hi="व्हाट्सएप के माध्यम से पूछें">Inquire via WhatsApp</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Why Choose Us" data-hi="हमें क्यों चुनें">Why Choose Us</h2>
+                <p class="section-subtitle" data-en="We offer best quality products with exceptional customer service" data-hi="हम असाधारण ग्राहक सेवा के साथ सर्वश्रेष्ठ गुणवत्ता वाले उत्पाद प्रदान करते हैं">
+                    We offer best quality products with exceptional customer service
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-reveal>
+                    <div class="service-icon">✨</div>
+                    <h3 data-en="Premium Quality" data-hi="प्रीमियम गुणवत्ता">Premium Quality</h3>
+                    <p data-en="All products are sourced from trusted manufacturers" data-hi="सभी उत्पाद विश्वसनीय निर्माताओं से प्राप्त हैं">All products are sourced from trusted manufacturers</p>
+                </div>
+
+                <div class="service-card" data-reveal>
+                    <div class="service-icon">🚚</div>
+                    <h3 data-en="Fast Delivery" data-hi="तेजी से डिलीवरी">Fast Delivery</h3>
+                    <p data-en="Quick shipping to your location with tracking" data-hi="ट्रैकिंग के साथ आपके स्थान पर तेजी से भेजना">Quick shipping to your location with tracking</p>
+                </div>
+
+                <div class="service-card" data-reveal>
+                    <div class="service-icon">💰</div>
+                    <h3 data-en="Best Prices" data-hi="सर्वश्रेष्ठ कीमतें">Best Prices</h3>
+                    <p data-en="Competitive pricing without compromising quality" data-hi="गुणवत्ता से समझौता किए बिना प्रतिस्पर्धी मूल्य निर्धारण">Competitive pricing without compromising quality</p>
+                </div>
+
+                <div class="service-card" data-reveal>
+                    <div class="service-icon">👥</div>
+                    <h3 data-en="Expert Team" data-hi="विशेषज्ञ टीम">Expert Team</h3>
+                    <p data-en="Experienced professionals ready to assist you" data-hi="आपकी सहायता के लिए तैयार अनुभवी पेशेवार">Experienced professionals ready to assist you</p>
+                </div>
+
+                <div class="service-card" data-reveal>
+                    <div class="service-icon">🛡️</div>
+                    <h3 data-en="Quality Guarantee" data-hi="गुणवत्ता की गारंटी">Quality Guarantee</h3>
+                    <p data-en="100% satisfaction guarantee on all products" data-hi="सभी उत्पादों पर 100% संतुष्टि की गारंटी">100% satisfaction guarantee on all products</p>
+                </div>
+
+                <div class="service-card" data-reveal>
+                    <div class="service-icon">📱</div>
+                    <h3 data-en="24/7 Support" data-hi="24/7 सहायता">24/7 Support</h3>
+                    <p data-en="Round-the-clock customer support via WhatsApp" data-hi="व्हाट्सएप के माध्यम से 24/7 ग्राहक सहायता">Round-the-clock customer support via WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-en="Get In Touch" data-hi="संपर्क में रहें">Get In Touch</h2>
+                <p class="section-subtitle" data-en="Fill the form below or contact us directly" data-hi="नीचे दिया गया फॉर्म भरें या हमसे सीधे संपर्क करें">Fill the form below or contact us directly</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label data-en="Name" data-hi="नाम">Name</label>
+                            <input type="text" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-en="Email" data-hi="ईमेल">Email</label>
+                            <input type="email" placeholder="Your email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-en="Phone" data-hi="फोन">Phone</label>
+                            <input type="tel" placeholder="+91-" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label data-en="Message" data-hi="संदेश">Message</label>
+                            <textarea placeholder="Your message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" data-en="Send Message" data-hi="संदेश भेजें">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Details & Map -->
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <div class="detail-icon">📍</div>
+                        <div class="detail-content">
+                            <h4 data-en="Address" data-hi="पता">Address</h4>
+                            <p>Near Chauki Mohalla, Ward No. 4, Parasia,<br>District Chhindwara, Madhya Pradesh,<br>In Front of Hanuman Mandir, India</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="detail-icon">📞</div>
+                        <div class="detail-content">
+                            <h4 data-en="Phone" data-hi="फोन">Phone</h4>
+                            <p><a href="tel:+91-8989774040">+91-8989774040</a></p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="detail-icon">💬</div>
+                        <div class="detail-content">
+                            <h4 data-en="WhatsApp" data-hi="व्हाट्सएप">WhatsApp</h4>
+                            <p><a href="https://wa.me/918989774040" target="_blank">Click to WhatsApp</a></p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <div class="detail-icon">📧</div>
+                        <div class="detail-content">
+                            <h4 data-en="Email" data-hi="ईमेल">Email</h4>
+                            <p><a href="mailto:niteshgoyal289@gmail.com">niteshgoyal289@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Google Map Embed -->
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.8467519876427!2d78.555625!3d22.1833331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd3e93f7d9f1234%3A0x1234567890abcdef!2sParasia%2C%20Chhindwara%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-buttons">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/918989774040?text=Hello%20Goyal%20Enterprises%2C%20I%20am%20interested%20in%20your%20products" 
+           target="_blank" 
+           class="float-btn whatsapp-btn" 
+           title="Chat on WhatsApp"
+           data-en="title: Chat on WhatsApp"
+           data-hi="title: व्हाट्सएप पर चैट करें">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-1.515.902-2.727 2.236-3.514 3.853-.79 1.622-1.123 3.475-.954 5.29.055.624.149 1.237.29 1.826.14.589.33 1.159.568 1.706l.097.245.145-.042c2.624-.795 5.110-2.154 7.178-4.027l.529-.457.564.106c1.798.34 3.501.023 5.052-.918 1.56-.951 2.788-2.506 3.514-4.612.726-2.112.788-4.554.17-6.857-.618-2.305-1.845-4.242-3.54-5.615-1.699-1.379-3.842-2.122-6.079-2.122-2.237 0-4.38.743-6.079 2.122z"/>
+            </svg>
+        </a>
+
+        <!-- Call Button -->
+        <a href="tel:+91-8989774040" 
+           class="float-btn call-btn" 
+           title="Call Us"
+           data-en="title: Call Us"
+           data-hi="title: हमें कॉल करें">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.75-.25 1.02l-2.2 2.2z"/>
+            </svg>
+        </a>
+
+        <!-- Scroll to Top Button -->
+        <button class="float-btn scroll-top-btn" id="scrollTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" style="display: none;">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <polyline points="18 15 12 9 6 15"></polyline>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-en="About Us" data-hi="हमारे बारे में">About Us</h4>
+                    <p data-en="Goyal Enterprises is a trusted supplier of premium hardware and plywood products for over 15 years." data-hi="गोयल एंटरप्राइजेज 15 वर्षों से अधिक समय से प्रीमियम हार्डवेयर और प्लाईवुड उत्पादों का विश्वसनीय आपूर्तिकर्ता है।">
+                        Goyal Enterprises is a trusted supplier of premium hardware and plywood products for over 15 years.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-en="Quick Links" data-hi="त्वरित लिंक">Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero" data-en="Home" data-hi="होम">Home</a></li>
+                        <li><a href="#products" data-en="Products" data-hi="उत्पाद">Products</a></li>
+                        <li><a href="#services" data-en="Services" data-hi="सेवाएं">Services</a></li>
+                        <li><a href="#contact" data-en="Contact" data-hi="संपर्क करें">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-en="Follow Us" data-hi="हमें फॉलो करें">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="#" title="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0m5.521 11.956h-4.418c0 .522.421 1.044 1.044 1.044h3.418v4.956h-9.406V9.957c0-.667.522-1.189 1.189-1.189h8.217v3.188zm-5.605-2.144c-.945 0-1.711.766-1.711 1.711s.766 1.711 1.711 1.711 1.711-.766 1.711-1.711-.766-1.711-1.711-1.711z"/></svg></a>
+                        <a href="#" title="Twitter"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417a9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-en="Contact Info" data-hi="संपर्क जानकारी">Contact Info</h4>
+                    <p data-en="Phone: +91-8989774040" data-hi="फोन: +91-8989774040">Phone: +91-8989774040</p>
+                    <p data-en="Email: niteshgoyal289@gmail.com" data-hi="ईमेल: niteshgoyal289@gmail.com">Email: niteshgoyal289@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-en="© 2024 Goyal Enterprises. All rights reserved." data-hi="© 2024 गोयल एंटरप्राइजेज। सर्वाधिकार सुरक्षित।">© 2024 Goyal Enterprises. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
